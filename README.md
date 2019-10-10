@@ -1,6 +1,5 @@
-# demo_nuxt_and_lottie
-
-> My supreme Nuxt.js project
+# DEMO_Nuxt_And_Lottie
+SaCSS vol.107 の LT で行う「Nuxt + Lottie でお手軽アニメーション」のデモ用リポジトリです。
 
 ## Build Setup
 
