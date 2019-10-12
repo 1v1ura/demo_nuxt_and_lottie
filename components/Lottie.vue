@@ -4,6 +4,7 @@
 
 <script>
   import lottie from 'lottie-web';
+
   export default {
     props: {
       options: {
@@ -13,13 +14,12 @@
     },
     mounted () {
       lottie.loadAnimation({
-          container: this.$refs.animationConatainer,
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          animationData: this.options.animationData
-        }
-      );
+        container: this.$refs.animationConatainer,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: this.options.animationData
+      });
     }
   }
 </script>

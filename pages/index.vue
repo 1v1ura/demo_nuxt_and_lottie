@@ -8,7 +8,9 @@
 import Lottie from '~/components/lottie.vue';
 
 export default {
-  components: { Lottie },
+  components: {
+    Lottie
+  },
   asyncData() {
     return {
       defaultOptions: {
