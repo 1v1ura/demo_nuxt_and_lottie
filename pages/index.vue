@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <lottie :options="lottieOptions" />
+    <Lottie :options="lottieOptions" />
   </div>
 </template>
 
 <script>
-import Lottie from '~/components/lottie.vue';
+import Lottie from '~/components/Lottie.vue';
 
 export default {
   components: {
