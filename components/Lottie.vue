@@ -1,5 +1,5 @@
 <template>
-  <div :style="style" ref="lavContainer"></div>
+  <div ref="animationConatainer"></div>
 </template>
 
 <script>
@@ -9,32 +9,17 @@
       options: {
         type: Object,
         required: true
-      },
-      height: Number,
-      width: Number,
-    },
-    data () {
-      return {
-        style: {
-          width: this.width ? `${this.width}px` : '100%',
-          height: this.height ? `${this.height}px` : '100%',
-          overflow: 'hidden',
-          margin: '0 auto'
-        }
       }
     },
     mounted () {
-      console.log(this.options.animationData)
-      this.anim = lottie.loadAnimation({
-          container: this.$refs.lavContainer,
+      lottie.loadAnimation({
+          container: this.$refs.animationConatainer,
           renderer: 'svg',
-          loop: this.options.loop !== false,
-          autoplay: this.options.autoplay !== false,
-          animationData: this.options.animationData.default,
-          rendererSettings: this.options.rendererSettings
+          loop: true,
+          autoplay: true,
+          animationData: this.options.animationData
         }
       );
-      this.$emit('animCreated', this.anim)
     }
   }
 </script>

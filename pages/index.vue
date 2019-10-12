@@ -1,23 +1,19 @@
 <template>
   <div class="container">
-    <lottie :options="defaultOptions" v-on:animCreated="handleAnimation"/>
+    <lottie :options="defaultOptions" />
   </div>
 </template>
 
 <script>
 import Lottie from '~/components/lottie.vue';
-import * as animationData from '~/assets/SaCSS.json';
 
 export default {
   components: { Lottie },
-  data() {
+  asyncData() {
     return {
-      defaultOptions: { animationData },
-    }
-  },
-  methods: {
-    handleAnimation: function(anim) {
-      this.anim = anim;
+      defaultOptions: {
+        animationData: require(`~/assets/SaCSS.json`)
+      }
     }
   }
 }
