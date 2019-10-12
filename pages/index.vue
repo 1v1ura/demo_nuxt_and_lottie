@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <lottie :options="defaultOptions" />
+    <lottie :options="lottieOptions" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   },
   asyncData() {
     return {
-      defaultOptions: {
+      lottieOptions: {
         animationData: require(`~/assets/SaCSS.json`)
       }
     }
