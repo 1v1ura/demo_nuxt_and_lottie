@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "lottie-web": "https://github.com/airbnb/lottie-web",
+    "nuxt": "^2.0.0",
+    "vue-lottie": "^0.2.1"
   },
   "devDependencies": {}
 }
